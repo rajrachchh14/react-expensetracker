@@ -4,16 +4,16 @@ export default function App() {
   return (
     <>
       <div className="container mt-4">
-        <h3 className="text-center mb-4">Expense Tracker </h3>
+        <h4 className="text-center mb-4">Expense Tracker </h4>
         <div className="row row-cols-2 row-cols-lg-3">
           <div className="col-4">
-            <h3 className="text-center mb-4">My Bal $200.00 </h3>
+            <h4 className="text-center mb-4">My Bal $200.00 </h4>
           </div>
           <div class="col-4">
-            <h3 className="text-center">History </h3>
+            <h4 className="text-center">History </h4>
           </div>
           <div class="col-4">
-            <h3 className="text-center">My 4 </h3>
+            <h4 className="text-center">Add </h4>
           </div>
           <div class="col-4 col-lg-2">
             <div className="card">
@@ -44,9 +44,24 @@ export default function App() {
               </div>
             </div>
           </div>
-          <div class="col-4 col-lg-2">Column</div>
-          <div class="col-4 col-lg-2">Column</div>
-          <div class="col-4 col-lg-2">Column</div>
+          <div class="col">
+            <form>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Title" />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="Amount"
+                />
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                Submit
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </>
