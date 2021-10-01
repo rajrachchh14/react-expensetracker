@@ -19,6 +19,11 @@ const inititalState = {
       text: 'mobile',
       amount: -20,
     },
+    {
+      id: 4,
+      text: 'bank',
+      amount: 70,
+    },
   ],
 };
 

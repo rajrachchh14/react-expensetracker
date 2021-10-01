@@ -13,7 +13,11 @@ export default function TransactionList() {
     <>
       <div className="col-12 col-md-12 col-lg-4">
         {transaction.map((item) => (
-          <div className={`card bd-callout-${item.amount < 0 ? 'danger' : 'success'} mb-1`}>
+          <div
+            className={`card bd-callout-${
+              item.amount < 0 ? 'danger' : 'success'
+            } mb-1`}
+          >
             <div className="card-body" key={item.id}>
               <span>
                 {item.amount < 0 ? '-' : '+'}
