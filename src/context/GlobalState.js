@@ -18,7 +18,7 @@ const inititalState = {
 };
 
 // Create Context
-export const GlobalContext = createContext(inititalState);
+const GlobalContext = createContext(inititalState);
 
 // Provider component
 function GlobalState({ children }) {
@@ -33,3 +33,4 @@ function GlobalState({ children }) {
 }
 
 export default GlobalState;
+export { GlobalContext };
