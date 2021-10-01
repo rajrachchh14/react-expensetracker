@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
-
+import React, { useState, useContext } from 'react';
+import { GlobalContext } from '../context/GlobalState';
 export default function TransactionForm() {
   const [title, setTitle] = useState('');
   const [amount, setAmount] = useState(0);
+  const { addTransaction } = useContext(GlobalContext); // List all Data
   return (
     <>
       <div className="col-12 col-md-12 col-lg-4 pb-2">
-        <form>
+        <form onSubmit={onSubmit}>
           <div className="mb-3">
             <input
               type="text"
