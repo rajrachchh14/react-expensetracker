@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 export default function TransactionForm() {
   const [title, setTitle] = useState('');
-  const [amount, setAsmount] = useState('');
+  const [amount, setAsmount] = useState(0);
   return (
     <>
       <div class="col-12 col-md-12 col-lg-4 pb-2">
