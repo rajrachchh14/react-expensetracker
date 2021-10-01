@@ -23,7 +23,7 @@ export default function IncomeExpense() {
           <h3>Data</h3>
         </div>
         <div className="row">
-          <div className="col-12 col-md-6 col-lg-2 mb-2">
+          <div className="col-12 col-md-6 col-lg-4 mb-2">
             <div className="card income">
               <div className="card-body">
                 <h5 className="card-title text-success">Income</h5>
@@ -32,7 +32,7 @@ export default function IncomeExpense() {
             </div>
           </div>
 
-          <div className="col-12 col-md-6 col-lg-2 mb-2">
+          <div className="col-12 col-md-6 col-lg-4 mb-2">
             <div className="card expense">
               <div className="card-body">
                 <h5 className="card-title text-danger">Expense</h5>
