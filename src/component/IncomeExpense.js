@@ -12,7 +12,7 @@ export default function IncomeExpense() {
         </div>
       </div>
 
-      <div class="col-12 col-md-6 col-lg-2 mb-2">
+      <div className="col-12 col-md-6 col-lg-2 mb-2">
         <div className="card expense">
           <div className="card-body">
             <h5 className="card-title text-danger">Expense</h5>
