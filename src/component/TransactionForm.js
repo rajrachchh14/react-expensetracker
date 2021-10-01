@@ -7,7 +7,13 @@ export default function TransactionForm() {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    console.log('a');
+    // console.log('a');
+    const submit = {
+      id: 111,
+      title: title,
+      amount: amount,
+    };
+    addTransaction(submit);
   };
 
   return (
