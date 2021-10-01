@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 export default function TransactionForm() {
   const [title, setTitle] = useState('');
-  const [amount, setAsmount] = useState(0);
+  const [amount, setAmount] = useState(0);
   return (
     <>
       <div class="col-12 col-md-12 col-lg-4 pb-2">
@@ -21,7 +21,7 @@ export default function TransactionForm() {
               type="number"
               class="form-control"
               value={amount}
-              onChange={(e) => setAsmount(e.target.value)}
+              onChange={(e) => setAmount(e.target.value)}
               placeholder="Amount"
             />
           </div>
