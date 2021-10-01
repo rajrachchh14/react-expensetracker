@@ -6,7 +6,8 @@ export default function TransactionForm() {
   const { addTransaction } = useContext(GlobalContext); // List all Data
 
   const onSubmit = (e) => {
-    e.prevent.Default();
+    e.preventDefault();
+    console.log('a');
   };
 
   return (
