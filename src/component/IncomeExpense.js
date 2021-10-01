@@ -19,7 +19,9 @@ export default function IncomeExpense() {
   return (
     <>
       <div className="col-lg-4">
-        <div className="text-center">A</div>
+        <div className="text-center">
+          <h3>Data</h3>
+        </div>
         <div className="row">
           <div className="col-12 col-md-6 col-lg-2 mb-2">
             <div className="card income">

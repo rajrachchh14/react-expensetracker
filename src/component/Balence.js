@@ -8,7 +8,7 @@ export default function Balence() {
   console.log(transaction);
   return (
     <>
-      <h4 className="text-center"> Balence </h4>
+      <h4 className="text-center"> Balence {total} </h4>
     </>
   );
 }
