@@ -34,26 +34,6 @@ export default function TransactionList() {
           </div>
         ))}
       </div>
-
-      {/* <div className="col-12 col-md-12 col-lg-4">
-        <div className="card bd-callout-danger mb-1">
-          <div className="card-body">
-            $100
-            <button className="btn btn-sm text-danger float-end">
-              <FontAwesomeIcon icon={faTrash} />
-            </button>
-          </div>
-        </div>
-
-        <div className="card bd-callout-success mb-2">
-          <div className="card-body">
-            $100
-            <button className="btn btn-sm text-danger float-end">
-              <FontAwesomeIcon icon={faTrash} />
-            </button>
-          </div>
-        </div>
-      </div> */}
     </>
   );
 }
