@@ -20,13 +20,14 @@ const inititalState = {
 export const GlobalContext = createContext(inititalState);
 
 // Provider component
-export const GlobalProvider = ({ children }) => {
-  const [state, dispatch] = useReducer(AppReducer, inititalState);
-
+function GlobalProvider({ children }) {
+  // const [state, dispatch] = useReducer(AppReducer, inititalState);
   // const data = transaction:state.transaction;
   return (
     <>
       <GlobalContext.Provider value={'data'}>{children}</GlobalContext.Provider>
     </>
   );
-};
+}
+
+export default GlobalProvider;
