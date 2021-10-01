@@ -13,7 +13,7 @@ export default function IncomeExpense() {
   const expense =
     amount.filter((b) => b < 0).reduce((a, b) => (a += b), 0) * -(1).toFixed(2);
 
-  console.log(income, 'f');
+  // console.log(income, 'f');
   return (
     <>
       <div className="col-12 col-md-6 col-lg-2 mb-2">
