@@ -9,7 +9,7 @@ export default function TransactionForm() {
     e.preventDefault();
     // console.log('a');
     const NewTransaction = {
-      id: Math.floor((Math.random() * 10) * 1000000),
+      id: Math.floor(Math.random() * 10 * 1000000),
       title,
       amount,
     };
