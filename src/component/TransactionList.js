@@ -28,7 +28,7 @@ export default function TransactionList() {
               </span>
 
               <span className="text-primary">
-                ( {item.text.toUpperCase()} )
+                ( {item.title.toUpperCase()} )
               </span>
               <button
                 className="btn btn-sm text-danger float-end"
