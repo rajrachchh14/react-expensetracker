@@ -18,20 +18,23 @@ export default function IncomeExpense() {
   // console.log(income, 'f');
   return (
     <>
-      <div className="col-12 col-md-6 col-lg-2 mb-2">
-        <div className="card income">
-          <div className="card-body">
-            <h5 className="card-title text-success">Income</h5>
-            <h6 className="card-subtitle mb-2 text-muted">${income}</h6>
+      <div className="col-12 col-md-6 col-lg-4 mb-2">
+        <div className="text-center">hisss</div>
+        <div className="col-12 col-md-6 col-lg-2 mb-2">
+          <div className="card income">
+            <div className="card-body">
+              <h5 className="card-title text-success">Income</h5>
+              <h6 className="card-subtitle mb-2 text-muted">${income}</h6>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="col-12 col-md-6 col-lg-2 mb-2">
-        <div className="card expense">
-          <div className="card-body">
-            <h5 className="card-title text-danger">Expense</h5>
-            <h6 className="card-subtitle mb-2 text-muted">${expense}</h6>
+        <div className="col-12 col-md-6 col-lg-2 mb-2">
+          <div className="card expense">
+            <div className="card-body">
+              <h5 className="card-title text-danger">Expense</h5>
+              <h6 className="card-subtitle mb-2 text-muted">${expense}</h6>
+            </div>
           </div>
         </div>
       </div>
