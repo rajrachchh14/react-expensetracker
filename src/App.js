@@ -17,7 +17,7 @@ export default function App() {
             <h4 className="text-center">Add </h4>
           </div> */}
 
-          <div class="col-12 col-md-6 col-lg-2 pb-2">
+          <div class="col-12 col-md-6 col-lg-2 mb-2">
             <div className="card income">
               <div className="card-body">
                 <h5 className="card-title text-success">Income</h5>
@@ -26,7 +26,7 @@ export default function App() {
             </div>
           </div>
 
-          <div class="col-12 col-md-6 col-lg-2 pb-2">
+          <div class="col-12 col-md-6 col-lg-2 mb-2">
             <div className="card expense">
               <div className="card-body">
                 <h5 className="card-title text-danger">Expense</h5>
@@ -35,8 +35,11 @@ export default function App() {
             </div>
           </div>
 
-          <div class="col-12 col-md-12 col-lg-4 pb-2">
-            <div className="card bd-callout-danger">
+          <div class="col-12 col-md-12 col-lg-4">
+            <div
+              className="card bd-callout-danger mb-1"
+              
+            >
               <div className="card-body">
                 $100
                 <button className="btn btn-sm text-danger float-end">
@@ -45,7 +48,7 @@ export default function App() {
               </div>
             </div>
 
-            <div className="card bd-callout-success">
+            <div className="card bd-callout-success mb-2">
               <div className="card-body">
                 $100
                 <button className="btn btn-sm text-danger float-end">
