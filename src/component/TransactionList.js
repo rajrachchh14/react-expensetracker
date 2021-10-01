@@ -8,10 +8,21 @@ export default function TransactionList() {
   // const context = useContext(GlobalContext); // Data Receive
   const { transaction } = useContext(GlobalContext); // Destrure Data
   // console.log(context);
-  // console.log(transaction);
+  console.log(transaction);
   return (
     <>
-      <div className="col-12 col-md-12 col-lg-4">
+      {transaction.map((item) => (
+        <div className="card bd-callout-danger mb-1">
+          <div className="card-body">
+            {item.amount} {item.text}
+            <button className="btn btn-sm text-danger float-end">
+              <FontAwesomeIcon icon={faTrash} />
+            </button>
+          </div>
+        </div>
+      ))}
+
+      {/* <div className="col-12 col-md-12 col-lg-4">
         <div className="card bd-callout-danger mb-1">
           <div className="card-body">
             $100
@@ -29,7 +40,7 @@ export default function TransactionList() {
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

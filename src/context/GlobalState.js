@@ -14,6 +14,11 @@ const inititalState = {
       text: 'cash',
       amount: 50,
     },
+    {
+      id: 3,
+      text: 'mobile',
+      amount: -20,
+    },
   ],
 };
 
