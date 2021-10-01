@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 export default function TransactionList() {
-  // const context = useContext(GlobalContext); // Data Receive
+  const context = useContext(GlobalContext); // Data Receive  ??
   const { transaction } = useContext(GlobalContext); // Destrure Data
   const { deleteTransaction } = useContext(GlobalContext); // Destrure Data
   // console.log(transaction);
