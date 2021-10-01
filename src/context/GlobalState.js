@@ -6,13 +6,8 @@ const inititalState = {
   transaction: [
     {
       id: 1,
-      title: 'aa',
+      title: '1',
       amount: 100,
-    },
-    {
-      id: 2,
-      title: 'aa',
-      amount: -10,
     },
   ],
 };

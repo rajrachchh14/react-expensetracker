@@ -1,6 +1,6 @@
 // 2nd
 // 8th
-// import React from 'react';
+import React from 'react';
 
 export default (state, action) => {
   switch (action.type) {
@@ -12,12 +12,9 @@ export default (state, action) => {
         ),
       };
     case 'ADD_TRANSACTION':
-      return {
-        ...state,
-        transaction: [action.payload, ...state.transaction],
-      };
+      return { ...state, transaction: [action.payload, ...state.transaction] };
     default:
       return state;
-      throw new Error();
+    // throw new Error();
   }
 };
