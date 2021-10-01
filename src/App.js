@@ -1,10 +1,10 @@
 import React from 'react';
 
-import IncomeExpense from './component/IncomeExpense';
-import TransactionList from './component/TransactionList';
-import TransactionForm from './component/TransactionForm';
-import Balence from './component/Balence';
-import GlobalState from './context/GlobalState';
+import { IncomeExpense } from './component/IncomeExpense';
+import { TransactionList } from './component/TransactionList';
+import { TransactionForm } from './component/TransactionForm';
+import { Balence } from './component/Balence';
+import { GlobalState } from './context/GlobalState';
 
 export default function App() {
   return (

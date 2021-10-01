@@ -1,12 +1,12 @@
 // 4 th
 import React, { useContext } from 'react';
-import GlobalState from '../context/GlobalState';
+import { GlobalState } from '../context/GlobalState';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 export default function TransactionList() {
   const context = useContext(GlobalState);
-  console.log(context, 's');
+  console.log(context);
 
   return (
     <>

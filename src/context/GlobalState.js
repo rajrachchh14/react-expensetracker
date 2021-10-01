@@ -1,6 +1,6 @@
 // 1st
 import React, { createContext, useReducer } from 'react';
-import AppReducer from './AppReducer';
+import { AppReducer } from './AppReducer';
 
 const inititalState = {
   transaction: [
