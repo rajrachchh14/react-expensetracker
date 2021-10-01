@@ -7,6 +7,9 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons';
 export default function TransactionList() {
   // const context = useContext(GlobalContext); // Data Receive
   const { transaction } = useContext(GlobalContext); // Destrure Data
+
+  const sing = '';
+
   // console.log(context);
   console.log(transaction);
   return (
@@ -17,7 +20,6 @@ export default function TransactionList() {
             <div className="card-body">
               <span> {item.amount} </span>
               <span className="text-primary">
-                
                 ( {item.text.toUpperCase()} )
               </span>
               <button className="btn btn-sm text-danger float-end">
