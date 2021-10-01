@@ -3,28 +3,7 @@ import React, { createContext, useReducer } from 'react';
 import AppReducer from './AppReducer';
 
 const inititalState = {
-  transaction: [
-    {
-      id: 1,
-      text: 'camera',
-      amount: 20,
-    },
-    {
-      id: 2,
-      text: 'cash',
-      amount: 50,
-    },
-    {
-      id: 3,
-      text: 'mobile',
-      amount: -20,
-    },
-    {
-      id: 4,
-      text: 'bank',
-      amount: 70,
-    },
-  ],
+  transaction: [],
 };
 
 // Create Context
