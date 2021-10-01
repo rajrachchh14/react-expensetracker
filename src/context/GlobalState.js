@@ -12,7 +12,7 @@ const inititalState = {
     {
       id: 2,
       title: 'aa',
-      amount: 100,
+      amount: -10,
     },
   ],
 };

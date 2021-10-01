@@ -6,7 +6,7 @@ export default function Balence() {
   const amt = transaction.map((transaction) => transaction.amount); // list all amount
 
   const total = amt.reduce((a, b) => (a += b), 0).toFixed(2); // Plus minus & Get Final Amount
-  console.log(transaction);
+  console.log(total);
   return (
     <>
       <h4 className="text-center"> Balence ${total}</h4>
