@@ -6,8 +6,9 @@ export default function App() {
       <div className="container mt-4">
         <h4 className="text-center mb-4">Expense Tracker </h4>
         <div className="row">
+          <h4 className="text-center">My Bal $200.00</h4>
           {/* 
-           <h4 className="text-center">My Bal $200.00</h4>
+          
           <div class="col-4">
             <h4 className="text-center">History </h4>
           </div>
