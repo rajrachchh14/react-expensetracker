@@ -7,7 +7,7 @@ const inititalState = {
     {
       id: 1,
       text: 'camera',
-      amount: -20,
+      amount: 20,
     },
     {
       id: 2,
