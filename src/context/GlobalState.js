@@ -1,4 +1,4 @@
-// 1st Define
+// 1st
 import React, { createContext, useReducer } from 'react';
 import AppReducer from './AppReducer';
 
