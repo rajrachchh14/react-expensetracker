@@ -21,3 +21,7 @@
 .form-control {
   border: 1px solid #0080ff !important;
 }
+
+body {
+  background-color: rgb(250, 250, 250);
+}
