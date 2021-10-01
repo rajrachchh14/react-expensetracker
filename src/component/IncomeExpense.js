@@ -1,13 +1,26 @@
-import React from 'react';
-
+//  5th
+import React, { useContext } from 'react';
+import { GlobalContext } from '../context/GlobalState';
 export default function IncomeExpense() {
+  const { transaction } = useContext(GlobalContext); // Destrure Data Display All
+  const amount = transaction.map((transaction) => transaction.amount); // list all amount
+
+  const income = amount
+    .filter((b) => b > 0)
+    .reduce((a, b) => (a += b), 0)
+    .toFixed(2);
+
+  const expense =
+    amount.filter((b) => b < 0).reduce((a, b) => (a += b), 0) * -(1).toFixed(2);
+
+  console.log(income, 'f');
   return (
     <>
       <div className="col-12 col-md-6 col-lg-2 mb-2">
         <div className="card income">
           <div className="card-body">
             <h5 className="card-title text-success">Income</h5>
-            <h6 className="card-subtitle mb-2 text-muted">$100</h6>
+            <h6 className="card-subtitle mb-2 text-muted">${income}</h6>
           </div>
         </div>
       </div>
@@ -16,7 +29,7 @@ export default function IncomeExpense() {
         <div className="card expense">
           <div className="card-body">
             <h5 className="card-title text-danger">Expense</h5>
-            <h6 className="card-subtitle mb-2 text-muted">$100</h6>
+            <h6 className="card-subtitle mb-2 text-muted">${expense}</h6>
           </div>
         </div>
       </div>
