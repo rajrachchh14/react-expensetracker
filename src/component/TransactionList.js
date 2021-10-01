@@ -5,9 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 export default function TransactionList() {
-  const context = useContext(GlobalContext);
-  console.log(context);
-
+  // const context = useContext(GlobalContext); // Data Receive
+  const { transaction } = useContext(GlobalContext); // Destrure Data
+  // console.log(context);
+  console.log(transaction);
   return (
     <>
       <div className="col-12 col-md-12 col-lg-4">
