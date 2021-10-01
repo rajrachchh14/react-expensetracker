@@ -25,7 +25,7 @@ function GlobalState({ children }) {
   function deleteTransaction(id) {
     dispatch({
       type: 'DELETE_TRANSACTION',
-      playload: id,
+      payload: id,
     });
   }
 
