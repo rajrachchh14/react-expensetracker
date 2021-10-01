@@ -10,7 +10,7 @@ const inititalState = {
       amount: -20,
     },
     {
-      id: 1,
+      id: 2,
       text: 'cash',
       amount: 50,
     },
@@ -26,6 +26,7 @@ function GlobalState({ children }) {
   const data = { transaction: state.transaction };
   return (
     <>
+      {/* {console.log(children)} data */}
       <GlobalContext.Provider value={data}>{children}</GlobalContext.Provider>
     </>
   );
