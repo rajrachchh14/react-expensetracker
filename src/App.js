@@ -9,7 +9,7 @@ import GlobalState from './context/GlobalState';
 export default function App() {
   return (
     <>
-      {/* 3rd   This is Call Provider In Wrap */}
+      {/* 3rd   This is Call Provider In Wrap Here Is Store Or Passing Data Globally Check If You Want Ro In component*/}
       <GlobalState>
         <div className="container mt-4">
           <h4 className="text-center mb-2">Expense Tracker </h4>
