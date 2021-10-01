@@ -18,6 +18,6 @@ export default (state, action) => {
       };
     default:
       return state;
-    throw new Error();
+      throw new Error();
   }
 };

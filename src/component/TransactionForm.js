@@ -11,7 +11,7 @@ export default function TransactionForm() {
     const NewTransaction = {
       id: 1,
       title: title,
-      amount: amount,
+      amount: +amount,
     };
     addTransaction(NewTransaction);
   };
