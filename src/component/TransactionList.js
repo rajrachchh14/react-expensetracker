@@ -14,8 +14,8 @@ export default function TransactionList() {
     <>
       <div className="col-12 col-md-12 col-lg-4">
         {transaction.map((item) => (
-          <div className="card bd-callout-danger mb-1" key={item.id}>
-            <div className="card-body">
+          <div className="card bd-callout-danger mb-1">
+            <div className="card-body" key={item.id}>
               <span> {item.amount} </span>
               <span className="text-primary">
                 ( {item.text.toUpperCase()} )
