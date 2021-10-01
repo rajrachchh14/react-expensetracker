@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 export default function App() {
   return (
     <>
@@ -19,7 +20,7 @@ export default function App() {
           <div class="col-12 col-md-6 col-lg-2 pb-2">
             <div className="card">
               <div className="card-body">
-                <h5 className="card-title">Income</h5>
+                <h5 className="card-title text-success">Income</h5>
                 <h6 className="card-subtitle mb-2 text-muted">$100</h6>
               </div>
             </div>
@@ -28,7 +29,7 @@ export default function App() {
           <div class="col-12 col-md-6 col-lg-2 pb-2">
             <div className="card">
               <div className="card-body">
-                <h5 className="card-title">Expense</h5>
+                <h5 className="card-title text-danger">Expense</h5>
                 <h6 className="card-subtitle mb-2 text-muted">$100</h6>
               </div>
             </div>
@@ -37,13 +38,19 @@ export default function App() {
           <div class="col-12 col-md-12 col-lg-4 pb-2">
             <div className="card bd-callout-danger">
               <div className="card-body">
-                <h6 className="card-subtitle ">$100</h6>
+                $100
+                <button className="btn btn-sm text-danger float-end">
+                  <FontAwesomeIcon icon={faTrash}  />
+                </button>
               </div>
             </div>
 
             <div className="card bd-callout-success">
-              <div className="card-body ">
-                <h6 className="card-subtitle ">$100</h6>
+              <div className="card-body">
+                $100
+                <button className="btn btn-sm text-danger float-end">
+                  <FontAwesomeIcon icon={faTrash} />
+                </button>
               </div>
             </div>
           </div>

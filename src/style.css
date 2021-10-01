@@ -12,9 +12,13 @@ p {
 } */
 
 .bd-callout-success {
-  border-left: 4px solid #71de5b;
+  border-left: 4px solid #71de5b !important;
 }
 
 .bd-callout-danger {
-  border-left: 4px solid #ec0909;
+  border-left: 4px solid #ec0909 !important;
+}
+.fontClass {
+  float: right;
+  margin: 5px;
 }
