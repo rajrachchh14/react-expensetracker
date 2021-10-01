@@ -5,7 +5,7 @@ export default function App() {
     <>
       <div className="container mt-4">
         <h4 className="text-center mb-4">Expense Tracker </h4>
-        <div className="row">
+        <div className="row ">
           {/* <div className="col-4">
             <h4 className="text-center mb-4">My Bal $200.00 </h4>
           </div> */}
@@ -15,7 +15,7 @@ export default function App() {
           <div class="col-4">
             <h4 className="text-center">Add </h4>
           </div> */}
-          <div class="col-12 col-md-6 col-lg-2">
+          <div class="col-12 col-md-6 col-lg-2 pb-2">
             <div className="card">
               <div className="card-body">
                 <h5 className="card-title">Income</h5>
@@ -23,7 +23,7 @@ export default function App() {
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-2">
+          <div class="col-12 col-md-6 col-lg-2 pb-2">
             <div className="card">
               <div className="card-body">
                 <h5 className="card-title">Expense</h5>
@@ -31,7 +31,7 @@ export default function App() {
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-12 col-lg-4">
+          <div class="col-12 col-md-12 col-lg-4 pb-2">
             <div className="card bd-callout-danger">
               <div className="card-body ">
                 <h6 className="card-subtitle ">$100</h6>
@@ -44,7 +44,7 @@ export default function App() {
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-12 col-lg-4">
+          <div class="col-12 col-md-12 col-lg-4 pb-2">
             <form>
               <div class="mb-3">
                 <input type="text" class="form-control" placeholder="Title" />
