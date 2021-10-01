@@ -9,7 +9,7 @@ import GlobalState from './context/GlobalState';
 export default function App() {
   return (
     <>
-      {/*  This is Call Provider In Wrap */}
+      {/* 3rd Define  This is Call Provider In Wrap */}
       <GlobalState>
         <div className="container mt-4">
           <h4 className="text-center mb-2">Expense Tracker </h4>

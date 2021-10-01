@@ -1,6 +1,5 @@
-// 1
+// 1st Define
 import React, { createContext, useReducer } from 'react';
-
 import AppReducer from './AppReducer';
 
 const inititalState = {

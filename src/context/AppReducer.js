@@ -1,3 +1,4 @@
+// 2nd Define
 import React from 'react';
 
 export default (state, action) => {
