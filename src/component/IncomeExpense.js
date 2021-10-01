@@ -3,15 +3,17 @@ import React, { useContext } from 'react';
 import { GlobalContext } from '../context/GlobalState';
 export default function IncomeExpense() {
   const { transaction } = useContext(GlobalContext); // Destrure Data Display All
-  const amount = transaction.map((transaction) => transaction.amount); // list all amount
 
-  const income = amount
+  const amounts = transaction.map((transaction) => transaction.amount); // list all amount
+  console.log(amounts);
+  const income = amounts
     .filter((b) => b > 0)
     .reduce((a, b) => (a += b), 0)
     .toFixed(2);
 
   const expense =
-    amount.filter((b) => b < 0).reduce((a, b) => (a += b), 0) * -(1).toFixed(2);
+    amounts.filter((b) => b < 0).reduce((a, b) => (a += b), 0) *
+    -(1).toFixed(2);
 
   // console.log(income, 'f');
   return (
