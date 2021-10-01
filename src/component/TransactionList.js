@@ -7,8 +7,7 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons';
 export default function TransactionList() {
   // const context = useContext(GlobalContext); // Data Receive
   const { transaction } = useContext(GlobalContext); // Destrure Data
-
-  console.log(transaction);
+  // console.log(transaction);
 
   return (
     <>
@@ -16,7 +15,10 @@ export default function TransactionList() {
         {transaction.map((item) => (
           <div className="card bd-callout-danger mb-1">
             <div className="card-body" key={item.id}>
-              <span> {item.amount} </span>
+              <span>
+                {item.amount < 0 ? '-' : '+'}
+                {Math.abs(item.amount)}
+              </span>
               <span className="text-primary">
                 ( {item.text.toUpperCase()} )
               </span>
