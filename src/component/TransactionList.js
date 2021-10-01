@@ -16,11 +16,12 @@ export default function TransactionList() {
       <div className="col-12 col-md-12 col-lg-4">
         {transaction.map((item) => (
           <div
+            key={item.id}
             className={`card bd-callout-${
               item.amount < 0 ? 'danger' : 'success'
             } mb-1`}
           >
-            <div className="card-body" key={item.id}>
+            <div className="card-body">
               <span>
                 {item.amount < 0 ? '-' : '+'}
                 {Math.abs(item.amount)}

@@ -11,8 +11,8 @@ export default (state, action) => {
           (transaction) => transaction.id != action.payload
         ),
       };
-    // case 'decrement':
-    //   return {count: state.count - 1};
+    case 'ADD_TRANSACTION':
+      return { ...state, transaction: [action.payload, ...state.transaction] };
     default:
       return state;
     // throw new Error();

@@ -44,7 +44,19 @@ function GlobalState({ children }) {
     });
   }
 
-  const data = { transaction: state.transaction, deleteTransaction }; // 7th
+  // Add
+  function addTransaction(transaction) {
+    dispatch({
+      type: 'ADD_TRANSACTION',
+      playload: transaction,
+    });
+  }
+
+  const data = {
+    transaction: state.transaction,
+    deleteTransaction,
+    addTransaction,
+  }; // 7th
   return (
     <>
       {/* {console.log(children)} data */}
