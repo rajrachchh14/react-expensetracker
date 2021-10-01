@@ -4,7 +4,9 @@ import { GlobalContext } from '../context/GlobalState';
 export default function IncomeExpense() {
   const { transaction } = useContext(GlobalContext); // Destrure Data Display All
 
-  const amounts = transaction.map((transaction) => transaction.amount); // list all amount
+  // const amounts = transaction.map((transaction) => transaction.amount); // list all amount
+
+  const amounts = transaction.map((transaction) => transaction.amount);
 
   console.log(amounts);
   const income = amounts
