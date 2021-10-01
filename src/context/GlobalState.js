@@ -30,11 +30,20 @@ function GlobalState({ children }) {
   }
 
   // Add
+  /*
   function addTransaction(transaction) {
     // console.log(transaction);
     dispatch({
       type: 'ADD_TRANSACTION',
       playload: transaction,
+    });
+  }
+*/
+
+  function addTransaction(transaction) {
+    dispatch({
+      type: 'ADD_TRANSACTION',
+      payload: transaction,
     });
   }
 
