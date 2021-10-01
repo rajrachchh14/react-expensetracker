@@ -22,7 +22,7 @@ const inititalState = {
 export const GlobalContext = createContext(inititalState);
 
 // Provider component
-function GlobalProvider({ children }) {
+function GlobalState({ children }) {
   const [state, dispatch] = useReducer(AppReducer, inititalState);
   // const data = transaction:state.transaction;
   return (
@@ -32,4 +32,4 @@ function GlobalProvider({ children }) {
   );
 }
 
-export default GlobalProvider;
+export default GlobalState;
