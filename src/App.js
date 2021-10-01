@@ -9,7 +9,8 @@ export default function App() {
   return (
     <>
       <div className="container mt-4">
-        <h4 className="text-center mb-4">Expense Tracker </h4>
+        <h4 className="text-center mb-2">Expense Tracker </h4>
+        <p className="text-center">Context Api with Create this app ... </p>
         <Balence />
         <div className="row">
           <IncomeExpense />
