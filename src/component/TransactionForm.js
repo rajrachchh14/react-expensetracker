@@ -4,6 +4,11 @@ export default function TransactionForm() {
   const [title, setTitle] = useState('');
   const [amount, setAmount] = useState(0);
   const { addTransaction } = useContext(GlobalContext); // List all Data
+
+  const onSubmit = (e) => {
+    e.prevent.Default();
+  };
+
   return (
     <>
       <div className="col-12 col-md-12 col-lg-4 pb-2">
