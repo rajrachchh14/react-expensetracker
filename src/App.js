@@ -18,7 +18,7 @@ export default function App() {
           </div> */}
 
           <div class="col-12 col-md-6 col-lg-2 pb-2">
-            <div className="card">
+            <div className="card income">
               <div className="card-body">
                 <h5 className="card-title text-success">Income</h5>
                 <h6 className="card-subtitle mb-2 text-muted">$100</h6>
@@ -27,7 +27,7 @@ export default function App() {
           </div>
 
           <div class="col-12 col-md-6 col-lg-2 pb-2">
-            <div className="card">
+            <div className="card expense">
               <div className="card-body">
                 <h5 className="card-title text-danger">Expense</h5>
                 <h6 className="card-subtitle mb-2 text-muted">$100</h6>
@@ -40,7 +40,7 @@ export default function App() {
               <div className="card-body">
                 $100
                 <button className="btn btn-sm text-danger float-end">
-                  <FontAwesomeIcon icon={faTrash}  />
+                  <FontAwesomeIcon icon={faTrash} />
                 </button>
               </div>
             </div>

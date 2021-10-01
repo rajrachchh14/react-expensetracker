@@ -22,3 +22,15 @@ p {
   float: right;
   margin: 5px;
 }
+
+.income {
+  border: 2px solid #71de5b !important;
+}
+
+.expense {
+  border: 2px solid #ec0909 !important;
+}
+
+.form-control{
+  border: 1px solid #0080ff !important;
+}
