@@ -23,9 +23,10 @@ export const GlobalContext = createContext(inititalState);
 export const GlobalProvider = ({ children }) => {
   const [state, dispatch] = useReducer(AppReducer, inititalState);
 
+  // const data = transaction:state.transaction;
   return (
     <>
-      <GlobalContext.Provider value={value}>{children}</GlobalContext.Provider>
+      <GlobalContext.Provider value={'data'}>{children}</GlobalContext.Provider>
     </>
   );
 };
