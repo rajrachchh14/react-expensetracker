@@ -9,12 +9,12 @@ export default function TransactionForm() {
     e.preventDefault();
     // console.log('a');
     const NewTransaction = {
-      id: 1,
-      title: title,
+      id: Math.floor((Math.random() * 10) * 1000000),
+      title,
       amount,
     };
-    console.log(typeof NewTransaction.amount);
-    // addTransaction(NewTransaction);
+    // console.log(NewTransaction.id);
+    addTransaction(NewTransaction);
   };
 
   return (
