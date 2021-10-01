@@ -8,10 +8,8 @@ export default function TransactionList() {
   // const context = useContext(GlobalContext); // Data Receive
   const { transaction } = useContext(GlobalContext); // Destrure Data
 
-  const sing = '';
-
-  // console.log(context);
   console.log(transaction);
+
   return (
     <>
       <div className="col-12 col-md-12 col-lg-4">
