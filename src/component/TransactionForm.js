@@ -5,28 +5,28 @@ export default function TransactionForm() {
   const [amount, setAmount] = useState(0);
   return (
     <>
-      <div class="col-12 col-md-12 col-lg-4 pb-2">
+      <div className="col-12 col-md-12 col-lg-4 pb-2">
         <form>
-          <div class="mb-3">
+          <div className="mb-3">
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
               placeholder="Title"
             />
           </div>
-          <div class="mb-3">
+          <div className="mb-3">
             <input
               type="number"
-              class="form-control"
+              className="form-control"
               value={amount}
               onChange={(e) => setAmount(e.target.value)}
               placeholder="Amount"
             />
           </div>
 
-          <button type="submit" class="btn btn-outline-success">
+          <button type="submit" className="btn btn-outline-success">
             Submit
           </button>
         </form>
