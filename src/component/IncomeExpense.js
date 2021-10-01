@@ -18,8 +18,8 @@ export default function IncomeExpense() {
   // console.log(income, 'f');
   return (
     <>
-      <div className="col-12 col-md-6 col-lg-4 mb-2">
-        <div className="text-center">hisss</div>
+      <div className="col-12 col-lg-4">
+        <div className="text-center">A</div>
         <div className="col-12 col-md-6 col-lg-2 mb-2">
           <div className="card income">
             <div className="card-body">

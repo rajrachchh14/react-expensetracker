@@ -14,7 +14,7 @@ export default function TransactionList() {
   return (
     <>
       <div className="col-12 col-md-12 col-lg-4">
-        <div className="text-center">hisss</div>
+        <div className="text-center">B</div>
         {transaction.map((item) => (
           <div
             key={item.id}

@@ -19,7 +19,7 @@ export default function TransactionForm() {
   return (
     <>
       <div className="col-12 col-md-12 col-lg-4 pb-2">
-        <div className="text-center">hisss</div>
+        <div className="text-center">C</div>
         <form onSubmit={onSubmit}>
           <div className="mb-3">
             <input
