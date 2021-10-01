@@ -35,7 +35,16 @@ const GlobalContext = createContext(inititalState);
 // For Provide Access Is Global Any One Can Use This Data  like This list
 function GlobalState({ children }) {
   const [state, dispatch] = useReducer(AppReducer, inititalState);
-  const data = { transaction: state.transaction };
+
+  //Action 6th
+  function deleteTransaction(id) {
+    dispatch({
+      type: 'DELETE_TRANSACTION',
+      playload: id,
+    });
+  }
+
+  const data = { transaction: state.transaction, deleteTransaction }; // 7th
   return (
     <>
       {/* {console.log(children)} data */}
