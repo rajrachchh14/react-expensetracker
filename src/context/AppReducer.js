@@ -12,7 +12,10 @@ export default (state, action) => {
         ),
       };
     case 'ADD_TRANSACTION':
-      return { ...state, transaction: [action.payload, ...state.transaction] };
+      return {
+        ...state,
+        transaction: [action.payload, ...state.transaction],
+      };
     default:
       return state;
     // throw new Error();
