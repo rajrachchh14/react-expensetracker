@@ -1,6 +1,6 @@
 // 2nd
 // 8th
-import React from 'react';
+// import React from 'react';
 
 export default (state, action) => {
   switch (action.type) {
