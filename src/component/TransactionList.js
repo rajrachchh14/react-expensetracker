@@ -11,16 +11,22 @@ export default function TransactionList() {
   console.log(transaction);
   return (
     <>
-      {transaction.map((item) => (
-        <div className="card bd-callout-danger mb-1">
-          <div className="card-body">
-            {item.amount} {item.text}
-            <button className="btn btn-sm text-danger float-end">
-              <FontAwesomeIcon icon={faTrash} />
-            </button>
+      <div className="col-12 col-md-12 col-lg-4">
+        {transaction.map((item) => (
+          <div className="card bd-callout-danger mb-1" key={item.id}>
+            <div className="card-body">
+              <span> {item.amount} </span>
+              <span className="text-primary">
+                
+                ( {item.text.toUpperCase()} )
+              </span>
+              <button className="btn btn-sm text-danger float-end">
+                <FontAwesomeIcon icon={faTrash} />
+              </button>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
 
       {/* <div className="col-12 col-md-12 col-lg-4">
         <div className="card bd-callout-danger mb-1">
