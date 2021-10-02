@@ -23,10 +23,11 @@ function GlobalState({ children }) {
 
   //Action 6th
   function deleteTransaction(id) {
-    dispatch({
-      type: 'DELETE_TRANSACTION',
-      payload: id,
-    });
+    console.log(id);
+    // dispatch({
+    //   type: 'DELETE_TRANSACTION',
+    //   payload: id,
+    // });
   }
 
   // Add
