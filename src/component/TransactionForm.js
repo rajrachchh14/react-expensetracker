@@ -11,7 +11,7 @@ export default function TransactionForm() {
     const NewTransaction = {
       id: Math.floor(Math.random() * 10 * 1000000),
       title,
-      amount,
+      amount: +amount,
     };
     // console.log(NewTransaction.id);
     addTransaction(NewTransaction);

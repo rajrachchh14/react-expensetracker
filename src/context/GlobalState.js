@@ -4,11 +4,11 @@ import AppReducer from './AppReducer';
 
 const inititalState = {
   transaction: [
-    {
-      id: 1,
-      title: '1',
-      amount: 100,
-    },
+    // {
+    //   id: 1,
+    //   title: '1',
+    //   amount: 100,
+    // },
   ],
 };
 
