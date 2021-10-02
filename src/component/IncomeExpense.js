@@ -4,11 +4,10 @@ import { GlobalContext } from '../context/GlobalState';
 export default function IncomeExpense() {
   const { transaction } = useContext(GlobalContext); // Destrure Data Display All
 
-  // const amounts = transaction.map((transaction) => transaction.amount); // list all amount
-
   const amounts = transaction.map((transaction) => transaction.amount);
+  // list all amount
 
-  console.log(amounts);
+  // console.log(amounts);
   const income = amounts
     .filter((b) => b > 0)
     .reduce((a, b) => (a += b), 0)
