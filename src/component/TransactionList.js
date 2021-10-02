@@ -9,7 +9,7 @@ export default function TransactionList() {
   const context = useContext(GlobalContext); // Data Receive  ??
   const { transaction } = useContext(GlobalContext); // Destrure Data
   const { deleteTransaction } = useContext(GlobalContext); // Destrure Data
-  // console.log(transaction);
+  // console.log(deleteTransaction);
 
   return (
     <>
@@ -35,7 +35,7 @@ export default function TransactionList() {
               </span>
               <button
                 className="btn btn-sm text-danger float-end"
-                onClick={() => deleteTransaction(transaction.id)}
+                onClick={() => deleteTransaction(item.id)}
               >
                 <FontAwesomeIcon icon={faTrash} />
               </button>
